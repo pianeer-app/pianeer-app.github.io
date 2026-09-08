@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Pianeer</title>
+<meta name="description" content="Help with Pianeer: connecting a MIDI piano over Bluetooth or USB, importing MIDI and MusicXML files, restoring a Pianeer Pro purchase, and how to get in touch.">
+<meta name="theme-color" content="#eef1f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0e18" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://pianeer-app.github.io/support.html">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="./">
+      <img src="assets/img/icon.png" alt="" width="28" height="28">
+      <span class="wordmark">Pianeer</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./#features">Features</a>
+      <a href="./#screenshots">Screenshots</a>
+      <a href="./#pricing">Price</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="mailto:axel.blackert@gmail.com?subject=Pianeer%20support">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Support</p>
+    <h1>Help with Pianeer</h1>
+  </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────────────────────── -->
+<section style="padding-top:clamp(28px,4vw,44px)">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="font-size:clamp(26px,3vw,34px)">Connecting your piano</h2>
+    </div>
+
+    <div class="faq">
+
+      <details class="qa" open>
+        <summary>How do I connect a MIDI keyboard over Bluetooth?</summary>
+        <div class="qa-body">
+          <p>Put your keyboard into Bluetooth MIDI pairing mode — how you do that
+          is in its manual, and is usually a dedicated button or a menu item.
+          Then in Pianeer, tap the <strong>MIDI</strong> chip in the bottom-right
+          of the start screen. Apple’s own pairing sheet opens and lists nearby
+          devices; tap yours and give it a few seconds.</p>
+          <p>Once it is paired, the chip shows the device name instead of “press
+          to connect”, and Pianeer starts reacting to keys straight away.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>How do I connect over USB?</summary>
+        <div class="qa-body">
+          <p>Plug the keyboard into your iPhone or iPad with the appropriate
+          cable or adapter — usually USB-C to USB-B for a digital piano, or a
+          Lightning to USB adapter on older devices. Pianeer picks up every
+          connected MIDI source automatically, so there is nothing to configure:
+          play a key and it should respond.</p>
+          <p>If nothing happens, the usual cause is a charge-only cable. A cable
+          that carries data is required.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>My keyboard is connected but no notes register.</summary>
+        <div class="qa-body">
+          <p>Work through these in order:</p>
+          <ol>
+            <li>Check the MIDI chip on the start screen actually names your
+            device. If it still says “press to connect”, the connection has not
+            been made yet.</li>
+            <li>Make sure the keyboard is not in <em>local off</em> mode or set
+            to a MIDI channel your other gear is filtering.</li>
+            <li>Close and reopen Pianeer. Core MIDI occasionally needs the app to
+            re-scan after a device is plugged in mid-session.</li>
+            <li>On USB, try a different cable — charge-only cables are the most
+            common culprit.</li>
+            <li>If your piano offers both USB and Bluetooth, try the other one.
+            Some models only send MIDI over one of them.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Do I need a MIDI piano at all?</summary>
+        <div class="qa-body">
+          <p>No. Pianeer has a built-in on-screen keyboard, and every mode works
+          with it — lessons, songs, drills, scales and randomized practice. You
+          can turn it on or off under <strong>Settings → Show virtual
+          keyboard</strong>.</p>
+          <p>For the best experience it is however recommended to use a MIDI
+          piano as input.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="font-size:clamp(26px,3vw,34px)">Using the app</h2>
+    </div>
+
+    <div class="faq">
+
+      <details class="qa">
+        <summary>Can I practise my own sheet music?</summary>
+        <div class="qa-body">
+          <p>Yes, with Pianeer Pro. Open <strong>Song Practice</strong> and tap
+          <strong>Import Song</strong>. Pianeer reads standard MIDI files
+          (<code>.mid</code>) and MusicXML (<code>.musicxml</code> and compressed
+          <code>.mxl</code>). Imported pieces behave exactly like the bundled
+          ones — same notation, same feedback, same statistics.</p>
+          <p>MusicXML generally gives the better result, because it carries the
+          engraving information — beaming, spelling of accidentals, note
+          groupings — which has to be inferred from a MIDI file.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Why does the app want me to play, not press ▶?</summary>
+        <div class="qa-body">
+          <p>Open a piece and just start playing and the playhead follows you. The
+          play button is for <em>timed</em> practice, where the music moves at a
+          fixed tempo whether or not you keep up.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>How do I loop a passage I keep getting wrong?</summary>
+        <div class="qa-body">
+          <p>In the control bar under the staff, drag across the bars you want.
+          The selection is highlighted, and the repeat button then loops just
+          that range. Drag again anywhere to clear it.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can I practise one hand at a time?</summary>
+        <div class="qa-body">
+          <p>Yes. The clef toggles in the control bar — the treble and bass clef
+          buttons — turn each staff on and off. Switch one off and Pianeer stops
+          expecting notes from that hand, so you can drill the other one on its
+          own. This works in songs, drills, lessons and scale practice.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>The notation is too small (or too cramped).</summary>
+        <div class="qa-body">
+          <p>Open <strong>Settings</strong> and adjust <strong>Staff
+          scaling</strong> and <strong>Staff density</strong>. Scaling changes how
+          large the notation is drawn; density changes how much music is packed
+          into each system. There are also three display modes at the top of
+          Settings — <strong>Sheet</strong>, <strong>Scrolling</strong> and
+          <strong>Falling notes</strong> — that fits different screen sizes.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Where does my practice history live?</summary>
+        <div class="qa-body">
+          <p>On your device, and nowhere else. Pianeer has no accounts and no
+          servers, so nothing syncs and nothing is uploaded. Your history is
+          included in an encrypted iPhone or iPad backup, which is how it survives
+          moving to a new device.</p>
+          <p>Deleting the app deletes the history with it. See the
+          <a href="privacy.html">privacy policy</a> for the details.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="font-size:clamp(26px,3vw,34px)">Purchases</h2>
+    </div>
+
+    <div class="faq">
+
+      <details class="qa">
+        <summary>Is Pianeer Pro a subscription?</summary>
+        <div class="qa-body">
+          <p>No. Pianeer Pro is a single, one-time in-app purchase — there is
+          nothing to renew and nothing to cancel. Buy it once and it stays
+          unlocked, including on your other devices signed in to the same Apple Account.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>I bought Pro but a new device shows it locked.</summary>
+        <div class="qa-body">
+          <p>Open <strong>Settings</strong> in Pianeer, scroll to the Pianeer Pro
+          section, and tap <strong>Restore Purchase</strong>. Make sure the device
+          is signed in to the same Apple Account you bought with.</p>
+          <p>If it still does not unlock, send me the date of the purchase and
+          I will help sort it out.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>How do I get a refund?</summary>
+        <div class="qa-body">
+          <p>Refunds for App Store purchases are handled by Apple. Go
+          to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>,
+          sign in, and choose the purchase.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>What is free without buying anything?</summary>
+        <div class="qa-body">
+          <p>The first twelve guided lessons, randomized practice, chord reference,
+          ten of the bundled songs, Hanon exercises 1–5, scale practice in C, G and F, a week of practice
+          statistics.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="band section-tight">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="font-size:clamp(26px,3vw,34px)">Music &amp; credits</h2>
+    </div>
+    <div class="prose">
+      <p>Every piece bundled with Pianeer is in the <strong>public domain</strong>,
+      and the Hanon exercises are from <em>The Virtuoso Pianist</em> by
+      Charles-Louis Hanon. Notation is engraved with the
+      <strong>Bravura</strong> music font by Steinberg, licensed under the SIL
+      Open Font License.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="section-head center" style="margin-bottom:26px">
+      <h2 style="font-size:clamp(26px,3.4vw,38px)">Still stuck?</h2>
+      <p class="lede">Send me the details and I will take a look.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:axel.blackert@gmail.com?subject=Pianeer%20support">axel.blackert@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <a class="footer-brand" href="./">
+      <img src="assets/img/icon.png" alt="" width="26" height="26">
+      <span class="wordmark">Pianeer</span>
+    </a>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="./#features">Features</a>
+      <a href="./#pricing">Price</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:axel.blackert@gmail.com">Contact</a>
+    </nav>
+    <p class="footer-legal">
+      © <span id="year">2026</span> Axel Blackert. Pianeer is an independent app and is not
+      affiliated with Apple Inc. Apple, the Apple logo, iPhone and iPad are
+      trademarks of Apple Inc. All bundled music is in the public domain.
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
