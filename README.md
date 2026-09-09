@@ -28,8 +28,12 @@ one-liner that fills in the copyright year.
 There is nothing to compile. Edit a file, commit, and GitHub Pages serves it.
 
 - Fully responsive, down to small phones.
-- Light and dark themes via `prefers-color-scheme`. The app itself is
-  light-only; the site's dark palette is taken from the app's falling-notes view.
+- **Light only**, matching the app, which is itself light-only
+  (`UIUserInterfaceStyle: Light`). A complete dark palette, drawn from the app's
+  falling-notes view, is written and working but switched off: it is gated
+  behind `:root[data-theme="dark"]`, an attribute nothing sets. Search
+  `DARK-THEME` in `assets/css/style.css` — the comment there says how to turn it
+  back on, either following the reader's OS or behind an explicit toggle.
 - Respects `prefers-reduced-motion`.
 - `.nojekyll` is present so GitHub Pages serves the files as-is.
 

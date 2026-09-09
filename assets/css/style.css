@@ -46,8 +46,20 @@
   color-scheme: light;
 }
 
+/* DARK-THEME (disabled) ------------------------------------------------------
+   The site is light-only for now, to match the app, which is itself light-only
+   (UIUserInterfaceStyle: Light). The dark palette below is kept, complete and
+   working, but gated behind :root[data-theme="dark"] — an attribute nothing
+   sets — so it never applies.
+
+   Two ways to bring it back. To follow the reader's OS setting again, delete
+   `[data-theme="dark"]` from the three DARK-THEME blocks and restore the dark
+   `theme-color` meta tag in each page's <head>. To offer an explicit toggle
+   instead, keep the selectors and have a control set data-theme="dark" on
+   <html>. Either way, search this file for DARK-THEME to find all three.
+   -------------------------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root[data-theme="dark"] {
     /* Derived from the app's falling-notes view: deep navy, not neutral black. */
     --bg: #0a0e18;
     --bg-2: #070a12;
@@ -280,9 +292,10 @@ h2 { font-size: clamp(30px, 4.2vw, 44px); letter-spacing: -0.03em; }
 .appstore-text small { font-size: 11px; opacity: 0.72; letter-spacing: 0.02em; }
 .appstore-text strong { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
 
+/* DARK-THEME (disabled) — the badge inverts on a dark ground. */
 @media (prefers-color-scheme: dark) {
-  .appstore { background: #f2f4f8; color: #10131a; border-color: rgba(0, 0, 0, 0.1); }
-  .appstore svg { fill: #10131a; }
+  :root[data-theme="dark"] .appstore { background: #f2f4f8; color: #10131a; border-color: rgba(0, 0, 0, 0.1); }
+  :root[data-theme="dark"] .appstore svg { fill: #10131a; }
 }
 
 .cta-row {
@@ -515,8 +528,9 @@ h1 {
   background: rgba(20, 22, 26, 0.06);
   margin-bottom: 22px;
 }
+/* DARK-THEME (disabled) — the track needs to lighten, not darken. */
 @media (prefers-color-scheme: dark) {
-  .seg { background: rgba(255, 255, 255, 0.08); }
+  :root[data-theme="dark"] .seg { background: rgba(255, 255, 255, 0.08); }
 }
 .seg label {
   padding: 6px 20px;
